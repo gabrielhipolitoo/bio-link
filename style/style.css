@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: lighter;
+}
+
+main{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #2467bf;
+}
+
+#btn{
+    display: none;
+}
+
+.modo-dark{
+    margin: 10px;
+    padding: 3px;
+    width: 85px;
+    border-radius: 15px;
+    background-color: rgb(189, 187, 187);
+    box-shadow: 1px 1px 5px rgb(61, 61, 61);
+
+}
+
+input[type='checkbox']:checked ~ main{
+    background-color: #1c1c1c;
+}
+
+label i{ 
+    font-size: 25px;
+    border-radius: 50%;
+    color: #d4cdcd;
+    transition: all 150ms linear;
+}
+
+input[type='checkbox']:checked ~ main article label i{
+    margin-left: 53px;
+    transition: all 150ms linear;
+    color: #181818;
+    transform: scale(-1, 1);
+}
+
+input[type='checkbox']:checked ~ main article{
+    background-color: #181818;
+
+    
+}
+
+input[type='checkbox']:checked ~ main article .modo-dark{
+background-color: #4b4c4d;
+}
+
+input[type='checkbox']:checked  ~ main article h1{
+    color: #cfc4c4;
+    text-align: center;
+    
+}
+
+input[type='checkbox']:checked ~ main article p {
+    color: #b9b8b8;
+    
+}
+
+article{
+    position: relative;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 20px;
+    width: 45%;
+    box-shadow: #201f1fad  0px 0px 120px 10px;
+
+}
+
+
+
+.img{
+    border-radius: 50%;
+    margin: 0px auto;
+    width: 95px;
+    height: 95px;
+    background: url(/imagens/myfoto2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2.5px solid rgb(141, 139, 139);
+    box-shadow: 1px 1px 5px rgb(61, 61, 61);
+    margin-bottom: 10px;
+
+}
+
+h1{
+    margin-bottom: 0px;
+    font-size: 25px;
+    color: #585858;
+    text-align: center;
+    font-weight: lighter;
+    
+}
+
+h3{
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: 'open sans';
+    font-size: 17px;
+    color:#5a5b5c;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p{
+    font-family: 'Open Sans';
+    text-align: center;
+    font-weight: lighter;
+    width: 350px;
+    margin: 0 auto;
+    color: #686565;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+
+.app{
+    margin: 20px auto;
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+
+
+
+
+.app  a{
+    margin: 0 auto;
+    color: #f3f3f5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.app  a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    width: 44%;
+    padding: 2.5%;
+    font-size: 27px;
+    font-weight: bolder;
+    box-shadow: 1px 1.5px 10px rgb(61, 61, 61);
+}
+
+.app a:hover{
+    padding: calc(2.5% - 35px);
+    font-size: 40px;
+    transition: all 150ms linear;
+}
+
+
+.wpp{
+    background-color: #66d766;
+}
+
+
+.you{
+    background: #ff0000a8;
+}
+
+.insta{
+    background: linear-gradient(127deg,
+    #fdf497 0%, 
+    #fdf497 5%, 
+    #fd5949 45%,
+    #d6249f 60%,
+    #285AEB 90%);
+
+}
+
+
+.github{
+    background: linear-gradient(127deg,#1f5e6e6b,#176674a2);
+}
+
+footer i{
+    color: gray;
+    font-size: 30px;
+    margin: 5px 17px 0  17px;
+}
+
+footer{
+    border-radius: 10px;
+    text-align: center;
+    margin: 50px auto;
+    width: 90%;
+}
+footer p{
+    margin-bottom: 20px;
+    display: block;
+}
+
+footer .fab:hover{
+    color: rgb(52, 101, 150);
+}
